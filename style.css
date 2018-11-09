@@ -8,12 +8,12 @@ body {
 }
 body > * {
 border: solid black 1px;
-padding: 2em;
 }
 header {
   background-color: #1D1010;
   color: #F9EAEA;
   text-align: center;
+  padding: 2em;
 }
 header > div {
   text-align: left;
@@ -26,8 +26,13 @@ header > ul > li {
   margin-right: 2em;
 }
 main {
-padding: 0em;
+padding: 1em 0em 1em 0em;
 text-align: center;
+}
+main div {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
 }
 body > header, body > footer {
   grid-column: 1 / span 3;
@@ -38,10 +43,10 @@ grid-row: 2;
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 2em;
 }
 footer > div {
   grid-column-gap: 30px;
-  //border: solid black;
   text-align: center;
   width: 20em;
 }
@@ -52,7 +57,7 @@ footer > div {
   text-align: center;
   margin: 5px 2px;
 }
-.fa-facebook, .fa-twitter, .fa-instagram {
+.fa-facebook, .fa-twitter {
   display: block;
   background-color: #3B5998;
   color: white;
