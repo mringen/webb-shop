@@ -1,0 +1,86 @@
+body {
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 2em 0;
+}
+.logo{
+    padding-top: 0.5em;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 340px;
+}
+
+.icons{
+    position: relative;
+    left: 340px;
+    bottom: -20px;
+}
+.logo:hover{
+    opacity: 0.5;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 0.5em;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.6;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: center;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+
+}
+
+.grid {
+    /* Grid Fallback */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Supports Grid */
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 1em;
+}
+
+.module {
+    /* Demo-Specific Styles */
+    background: #9590ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+
+    /* Flex Fallback */
+    margin-left: 5px;
+    margin-right: 20px;
+    flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+    .module {
+        margin: 0;
+    }
+}
