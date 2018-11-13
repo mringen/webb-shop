@@ -14,8 +14,6 @@ img {
 }
 
 .container {
-	background-color: beige;
-	font-family: courier;
 	font-size: 15px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -29,14 +27,45 @@ img {
 
 header {
 	font-size: 40px;
-	font-family: courier;
 	font-style: bold;
 	text-align: center;
 }
 
 body {
+  background-color: #ecf9ec;
 	line-height: 1.5em;
+	font-family: 'KoHo', sans-serif;
+  /*-webkit-mask: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center;*/
 
+}
+
+hr{
+   background: #d8d015;
+   border: #d8d015;
+
+}
+
+.socialMedia {
+   background-color: #d8d015;
+   padding: 1em;
+   position: relative;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.socialMedia i {
+   font-size: 40px;
+}
+
+.TEXT{
+   text-align: center
+}
+
+.TEXT > div{
+   border: 1px dashed red;
+   display: inline-block;
+   margin: 0px 0.5em;
 }
 
 @media screen and (max-width: 768px) {
