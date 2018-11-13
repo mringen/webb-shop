@@ -1,14 +1,20 @@
 body {
   display: grid;
-  grid-template-columns: 85px 1fr 85px;
+  grid-template-columns: 30px 1fr 30px;
   grid-template-rows: 100px 1fr 200px;
   margin: 0em;
   padding: 0em;
   background-color: #F9F9EAEA;
 }
+
 body > * {
 border: solid black 1px;
 }
+
+body > nav {
+grid-row: 2;
+}
+
 header {
   background-color: #1D1010;
   color: #F9EAEA;
@@ -20,30 +26,36 @@ header > div {
   font-size: 1.5em;
   font-style: italic;
 }
+
 header > ul > li {
   display: inline-block;
   font-size: 1.2em;
   margin-right: 2em;
 }
+
+body > header, body > footer {
+  grid-column: 1 / span 3;
+}
+
 main {
 padding: 1em 0em 1em 0em;
 text-align: center;
 }
+
+picture img {
+  width: 390px;
+}
+
 main div {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
+  display: block;
+  margin: 1em auto 2em auto;
 }
-body > header, body > footer {
-  grid-column: 1 / span 3;
-}
-body > nav {
-grid-row: 2;
-}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
+  text-align: center;
 }
 footer > div {
   grid-column-gap: 30px;
@@ -63,4 +75,47 @@ footer > div {
   color: white;
   border-radius: 10%;
   text-align: center;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body{
+    grid-template-columns: 0px 1fr 0px;
+    //background-color: lightgreen;
+  }
+
+  .divpicture img {
+    display: inline-block;
+    height: 45vw;
+    width: 97vw;
+    margin-bottom: 0em;
+ }
+ .divpicture:first-child > img {
+   height: 45vw;
+   width: 48vw;
+ }
+}
+
+@media (min-width: 769px) {
+  body {
+    grid-template-columns: 0px 1fr 0px;
+    //background-color: lightblue;
+
+  }
+
+  .divpicture img {
+    display: inline-block;
+    height: 25vw;
+    width: 60vw;
+    margin-bottom: 0em;
+ }
+
+.divpicture:first-child > img {
+  height: 25vw;
+  width: 32vw;
+}
+
+.divpicture > img:nth-child(2){
+  display: inline-block;
+  height: 25vw;
+  width: 36vw;
 }
