@@ -1,138 +1,187 @@
 body {
     display: grid;
-    grid-template-rows: 14vw 8vw 1fr auto auto;
+    grid-template-rows: 40vw 1fr auto auto;
+    background-image: url("imgEva/pexels-photo-276517.jpeg");
+    height: 100%;
+    background-position: left bottom;
 }
-.logo {
-    display: block;
-}
-.logo  img {
-    max-width: 100%;
+.header {
     position: fixed;
     top: 0px;
-    -webkit-mask-image: linear-gradient(to left, transparent 1%, black 5%);
+    z-index: 5;
+    width: 100%;
+    height: 5vw;
+    background-color: white;
 }
-#logga {
-    max-width: 19.2%;
-    position: fixed;
-    top: 0px;
+hr {
+    box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2);
+    background: #4aa861;
+    border: #246936;
+}
+.bikelogo{
+    padding: 0.2em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.TEXT{
+    text-align: center
+}
+.TEXT > div{
+    display: inline-block;
+    margin: 0px 0.5em;
+}
+.socialMedia {
+    background-color: #4aa861;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.bikelogo{
+    padding: 0.2em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 header {
     grid-row: 1;
 }
-nav {
-    grid-row: 2;
-    height: 4.5vw;
-    width: 100%;
-    position: fixed;
-    top: 15vw;
-}
-.navigation {
-    background-color: black;
-    width: 100%;
-}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+    opacity: 0.8;
 }
-.navigation li {
-    float: left;
+li {
+    margin: 15px;
+    width: 250px;
+    background-color: gray;
+    border-radius: 20%;
 }
-.navigation li a {
+li a {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
+    color: black;
+    padding: 10px;
     text-decoration: none;
 }
-li:hover {
-    background-color: grey;
-    border-radius: 5%;
-    border: 1px solid rgb(27, 27, 27);
-    background: linear-gradient(to bottom, rgb(197, 196, 196), rgb(153, 153, 153), grey, rgb(92, 92, 92), rgb(87, 87, 87))
+a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    font-family: 'KoHo', sans-serif;
 }
 main {
-    grid-row: 3;
+    z-index: -1;
+    grid-row: 2;
     margin: 20px;
+    overflow: hidden;
 }
 .mainHeader{
     width: 100%;
+    position: relative;
+    top: 0px;
+    height: 13vw;
 }
 .mainHeader img {
     max-width: 95%;
-    -webkit-mask-image: url("imgEva/bicycle-bike-brake-8348.jpg");
+    max-height: 100%;
+    -webkit-mask-image: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center;
+}
+.mainHeaderLogo {
+    background-color: #EAC67A;
+    color: rgb(31, 31, 31);
+    position: relative;
+    top: -10vw;
+    left: 5vw;
+    width: 17vw;
+    opacity: 0.7;
+    text-align: center;
+    -webkit-mask: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    font-size: 2.5vw;
+    margin-bottom: 0px;
+    font-family: 'KoHo', sans-serif;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5vw;
 }
 .product{
-    width: 200px;
+    background-color: white;
+    width: 250px;
     border: 2px solid black;
     display: block;
-    margin: 30px;
+    margin: 10px;
+    padding: 5px;
 }
 .product > img {
-    width: 200px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 aside {
-    grid-row: 4;
-    background-color: black;
+    grid-row: 3;
 }
 footer {
-    grid-row: 5;
-    background-color: black;
+    grid-row: 4;
     width: 100%;
-}
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
-li a {
-    display: block;
-    padding-left: 1em;
-}
-a {
-    font-size: 4vw;
-    text-decoration: none;
-    color: white;
 }
 footer p {
     padding: 0px;
     margin: 10px;
-    color: white;
+    color: black;
 }
 button {
     margin-left: 20px;
 }
 @media (min-width: 992px) {
     body {
-        grid-template-rows: 7vw 3.5vw 1fr auto;
+        grid-template-rows: 21vw 1fr auto;
         grid-template-columns: 300px 1fr; 
     }
-    header, nav, footer {
+    header, footer {
         grid-column: 1/ span 2;
     }
     aside {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     main {
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 2;
     }
     a {
         font-size: 2vw;
     }
-    #logga {
-        max-width: 9%;
+    .mainHeaderLogo {
+        top: -8vw;
+        width: 15vw;
     }
-    nav {
-        top: 7vw;
+}
+@media (min-width: 1200px) {
+    body {
+        grid-template-rows: 15vw 1fr auto;
+        grid-template-columns: 300px 1fr; 
+    }
+    header, footer {
+        grid-column: 1/ span 2;
+    }
+    aside {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    main {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    a {
+        font-size: 2vw;
+    }
+    .mainHeaderLogo {
+        top: -8vw;
+        width: 25vw;
     }
 }
