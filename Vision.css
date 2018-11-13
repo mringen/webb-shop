@@ -1,0 +1,59 @@
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.span1-2 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	background-color: beige;
+	font-family: courier;
+	font-size: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: 5em;
+	margin-right: 5em;
+	grid-column-gap: 2em;
+	align-items: center;
+	direction: ltr;
+}
+
+
+header {
+	font-size: 40px;
+	font-family: courier;
+	font-style: bold;
+	text-align: center;
+}
+
+body {
+	line-height: 1.5em;
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+  	background-color: lightgrey;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  	margin-right: 0;
+  	margin-bottom: 1em;
+  	}
+
+@media screen and (max-width: 480px) {
+  .container {
+  	background-color: salmon;
+    grid-template-columns: 1fr;
+  	margin-left: 0;
+  	margin-right: 0;
+  	margin-bottom: 1em;
+  	}
+
