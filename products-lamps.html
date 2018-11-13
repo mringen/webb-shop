@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>BikeTriCity - Produkter - Lampor</title>
+  <title>BikeTriCity - Produkter - Belysning</title>
   <link href="products2.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imgEva/header.jpg" alt="Bike in forest"> 
+            <picture>
+                <source srcset="imgEva/header-small.jpg" media="(max-width: 991px)" class="headImg">
+                <source srcset="imgEva/header.jpg" media="(min-width:992px)">  
+                <img src="imgEva/header.jpg" alt="Bike in forest">      
+            </picture> 
+            <picture>
             <img src="imgEva/logo1.png" alt="Logo" id="logga">
+            </picture>
         </div>
     </header>
         <nav>
@@ -27,13 +33,16 @@
     <aside>
         <ul>
             <li><a href="products.html">Cyklar</a></li>
-            <li><a href="products-lamps.html">Lampor</a></li>
+            <li><a href="products-lamps.html">Belysning</a></li>
             <li><a href="products-helmets.html">Hjälmar</a></li>
 
         </ul>
     </aside>
     <main>
         <div class="container">
+            <div class="mainHeader">
+                <img src="imgEva/bicycle-bike-brake-8348.jpg" alt="Belysning">
+            </div>
             <div class="product">
                 <img src="imgEva/29550_11143.jpg" alt="Cykellampa">
                 <h3>M TIGER SPORTS DS</h3>
@@ -57,6 +66,18 @@
                 <h3>OXC BRIGHT TORCH</h3>
                 <p>Prisvärt paket! Batterier och fästen medföljer.</p>
                 <p>250 kr <button>Köp nu</button></p>
+            </div> 
+            <div class="product">
+                <img src="imgEva/30729_16410.jpg" alt="Cykellampa">
+                <h3>KNOG PLUS</h3>
+                <p>Twinpack! Uppladdningsbar.</p>
+                <p>370 kr <button>Köp nu</button></p>
+            </div>
+            <div class="product">
+                <img src="imgEva/29753_12303.jpg" alt="Cykellampa">
+                <h3>KNOG BLINDER MINI DOT</h3>
+                <p>Twinpack! Uppladdningsbar.</p>
+                <p>690 kr <button>Köp nu</button></p>
             </div>          
         </div>
     </main>
