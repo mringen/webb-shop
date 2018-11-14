@@ -15,8 +15,8 @@ body {
 }
 hr {
     box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2);
-    background: #4aa861;
-    border: #246936;
+    background: #d8d015;
+    border: #d8d015;
 }
 .bikelogo{
     padding: 0.2em;
@@ -33,7 +33,7 @@ hr {
     margin: 0px 0.5em;
 }
 .socialMedia {
-    background-color: #4aa861;
+    background-color: #d8d015;
     padding: 1em;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -55,7 +55,7 @@ ul {
 li {
     margin: 15px;
     width: 250px;
-    background-color: gray;
+    background-color: #d8d015;
     border-radius: 20%;
 }
 li a {
@@ -67,7 +67,7 @@ li a {
 a {
     font-size: 1em;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'KoHo', sans-serif;
 }
 main {
@@ -81,10 +81,13 @@ main {
     position: relative;
     top: 0px;
     height: 13vw;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .mainHeader img {
-    max-width: 95%;
     max-height: 100%;
+    margin-left: 10%;
     -webkit-mask-image: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
     -webkit-mask-size: 100% 100%;
     -webkit-mask-position: center;
@@ -94,7 +97,7 @@ main {
     color: rgb(31, 31, 31);
     position: relative;
     top: -10vw;
-    left: 5vw;
+    left: 10vw;
     width: 17vw;
     opacity: 0.7;
     text-align: center;
@@ -163,7 +166,7 @@ button {
 }
 @media (min-width: 1200px) {
     body {
-        grid-template-rows: 15vw 1fr auto;
+        grid-template-rows: 12vw 1fr auto;
         grid-template-columns: 300px 1fr; 
     }
     header, footer {
