@@ -7,26 +7,27 @@ body {
   background-color: #F9F9EAEA;
 }
 
-body>* {
-  //border: solid black 1px;
-}
-
 body>nav {
   grid-row: 2;
 }
 
 /*start css header*/
 
+header {
+  -webkit-mask: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
+-webkit-mask-size: 100% 100%;
+-webkit-mask-position: center;
+}
 
 hr{
-   background: #677C71;
-   border: #677C71;
+   background: #d8d015;
+   border: #d8d015;
 
 }
 
 .socialMedia
 {
-   background-color: #677C71;
+   background-color: #d8d015;
    padding: 1em;
    position: relative;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -83,6 +84,7 @@ main div {
 }
 
 footer {
+  background-color: lightgrey;
   margin: 2em 0em 1em 0em;
 }
 
