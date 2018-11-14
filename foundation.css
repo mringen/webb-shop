@@ -1,0 +1,222 @@
+/*Mobilversionens CSS*/
+body {
+    background-color: #22252C;
+    display: grid;
+    grid-template-rows: 14vw 35vw 1fr auto;
+}
+header {
+    grid-row: 1;
+}
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 12vw;
+    background-color: #3F3250;
+}
+.logo {
+    margin-left: 30%;
+    top: 0px;
+    position: fixed;
+}
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 12vw;
+    color: #E14658;
+    opacity: 0.9;
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    grid-row: 2;
+}
+nav li a {
+    text-decoration: none;
+    color: #C0B3A0;
+    font-size: 8vw;
+    font-family: 'Bangers', cursive;
+    padding-right: 20vw;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #3F3250;
+    width: 100%;
+    position: fixed;
+    top: 8vw;
+    left: 0px;
+}
+ nav li {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+main {
+    grid-row: 3;
+}
+main div {
+    background-color: #E14658;
+    height: 200px;
+    width: 200px;
+}
+.yellow {
+    background-color: #C0B3A0;
+    height: 200px;
+    width: 200px;
+}
+footer {
+    grid-row: 4;
+}
+.footer {
+    background-color: #3F3250;
+    height: 23vw;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+}
+footer h5 {
+    color: #E14658;
+    font-size: 6vw;
+    font-family: 'Bangers', cursive;
+    padding-left: 30%;
+    margin: 0px;
+}
+.adress {
+    display: none;
+}
+.slogan {
+    display: none;
+}
+.fa {
+    padding-top: 3vw;
+    padding-left: 10vw;
+  }
+  
+  .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+    display: inline-block;
+    color: #C0B3A0;
+    border-radius: 10%;
+  }
+  /*Tablet CSS*/
+  @media (min-width: 600px) and (max-width: 992px) {
+      body {
+        display: grid;
+        grid-template-rows: 15vw 10vw 1fr auto;
+      }
+      nav ul {
+          top: 9.3vw;
+      }
+      nav li {
+          display: inline;
+          float: left;
+      }
+      nav li a {
+          font-size: 6vw;
+          display: block;
+          padding: 5px 20px;  
+      }
+      .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+          float: right;
+          padding-top: 0px;
+          padding-right: 45px;
+          padding-left: 0px;
+      }
+      .adress {
+          display: block;
+          font-family: 'Bitter', serif;
+          color: #C0B3A0;
+          font-size: 3vw;
+          position: relative;
+          float: left;
+          padding-left: 5px;
+          height:8vw;
+      }
+      .adress p {
+          padding-top: 0px;
+          margin-top: 0px;
+      }
+      .footer {
+          height: 15vw;
+      }
+  }
+  /*Laptop CSS*/
+  @media (min-width: 993px) {
+    body {
+        display: grid;
+        grid-template-rows: 5vw 5vw 1fr 9vw;
+      }
+    h1 {
+        font-size: 5vw;
+        margin-left: 35%;
+    }
+    .header {
+        height: 5vw;
+    }  
+    nav ul {
+        top: 3.5vw;
+    }
+    nav li {
+        display: inline;
+        float: left;
+        padding: 5px;
+    }
+    nav li a {
+        font-size: 3vw;
+        display: block;
+        padding: 5px 7vw;
+    }
+    nav li:hover {
+        background-color: #22252C;
+        color: black;
+    }
+    .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+        float: right;
+        padding-top: 0px;
+        padding-right: 45px;
+        padding-left: 0px;
+    }
+    .adress {
+        display: block;
+        font-family: 'Bitter', serif;
+        color: #C0B3A0;
+        font-size: 2vw;
+        position: relative;
+        float: left;
+        padding-left: 5px;
+        height:5vw;
+    }
+    .adress p {
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        height: 9vw;
+    }
+    footer h5 {
+        font-size: 3vw;
+        margin-left: 8%;
+        margin-bottom: 0px;
+    }
+    footer p {
+        font-size: 1.5vw;
+    }
+    .slogan {
+        float: center;
+        margin-left: 18%;
+        margin-top: 0px;
+        display: inline-block;
+        width: 20vw;
+        height: 4vw;
+        text-align: center;
+    }
+    h6 {
+        font-family: 'Bitter', serif;
+        font-size: 1.5vw;
+        color: #C0B3A0;
+        margin: 2px;
+    }
+  }

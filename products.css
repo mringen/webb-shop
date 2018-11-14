@@ -39,13 +39,6 @@ hr {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.bikelogo{
-    padding: 0.2em;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
 header {
     grid-row: 1;
 }
