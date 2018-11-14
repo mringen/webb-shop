@@ -1,0 +1,108 @@
+body {
+    display: grid;
+    grid-template-rows: 14vw 6vw 1fr auto auto;
+    background-image: url("imgEva/pexels-photo-276517.jpeg");
+    height: 100%;
+    background-position: left bottom;
+}
+.header {
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 5vw;
+    background-color: white;
+}
+hr {
+    box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2);
+    background: #4aa861;
+    border: #246936;
+}
+.bikelogo{
+    padding: 0.2em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.TEXT{
+    text-align: center
+}
+.TEXT > div{
+    display: inline-block;
+    margin: 0px 0.5em;
+}
+.socialMedia {
+    background-color: #4aa861;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.bikelogo{
+    padding: 0.2em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+header {
+    grid-row: 1;
+}
+li {
+    margin: 15px;
+    width: 250px;
+    background-color: gray;
+    border-radius: 20%;
+    list-style-type: none;
+}
+li a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    font-family: 'KoHo', sans-serif;
+}
+main {
+    grid-row: 3;
+    text-align: center;
+    margin: 20px;
+}
+main > img {
+    width: 20vw;
+}
+h2, p {
+    font-family: 'KoHo', sans-serif;
+}
+aside {
+    grid-row: 4;
+}
+footer {
+    grid-row: 5;
+    width: 100%;
+}
+@media screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-rows: 10vw 3.5vw 1fr auto;
+        grid-template-columns: 300px 1fr; 
+    }
+    header, nav, footer {
+        grid-column: 1/ span 2;
+    }
+    aside {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    main {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    a {
+        font-size: 2vw;
+    }
+}
