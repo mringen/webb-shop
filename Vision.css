@@ -24,6 +24,11 @@ img {
 	direction: ltr;
 }
 
+.bikelogo  {
+  width: 5em;
+  height: 5em;
+
+}
 
 header {
 	font-size: 40px;
@@ -63,9 +68,8 @@ hr{
 }
 
 .TEXT > div{
-   border: 1px dashed red;
    display: inline-block;
-   margin: 0px 0.5em;
+   margin: 0px 1em;
 }
 
 @media screen and (max-width: 768px) {
