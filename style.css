@@ -4,90 +4,49 @@ body {
   grid-template-rows: auto 1fr auto;
   margin: 0em;
   padding: 0em;
-  background-color: #F9F9EAEA;
+  background-color: lightblue;
 }
 
-body>nav {
+body > nav {
   grid-row: 2;
 }
 
-/*start css header*/
-
-/*header {
-  -webkit-mask: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
--webkit-mask-size: 100% 100%;
--webkit-mask-position: center;
-}*/
-
-hr{
-   background: #d8d015;
-   border: #d8d015;
-
-}
-
-.socialMedia
-{
-   background-color: #d8d015;
-   padding: 1em;
-   position: relative;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.TEXT{
-  text-align: center
-}
-
-.TEXT > div{
-   border: 1px dashed red;
-   display: inline-block;
-   margin: 0px 0.5em;
-}
-/*stop css header*/
-
-/*
 header {
-  background-color: #1D1010;
-  color: #F9EAEA;
-  text-align: center;
-  padding: 2em;
+  background-color: brown;
+  width: auto;
+  height: 150px;
+  margin-bottom: 2em;
 }
 
-header>div {
-  text-align: left;
-  font-size: 1.5em;
-  font-style: italic;
-}
-
-header>ul>li {
-  display: inline-block;
-  font-size: 1.2em;
-  margin-right: 2em;
-}
-*/
-
-body>header, body>footer {
+body > header, body > footer {
   grid-column: 1 / span 3;
 }
 
 main {
   padding: 0em 0em 1em 0em;
   text-align: center;
+  border: solid black 1px;
+}
+.absolute {
+  position: absolute;
+}
+ .firstPic, .secondPic, .thirdPic, .fourthPic, .fifthPic {
+  background-color: brown;
+
 }
 
-picture img {
-  width: 390px;
+.divpicture div img {
+  width: 350px;
 }
 
-main div {
+.divpicture div {
   display: block;
-  margin: 1em auto 2em auto;
 }
 
 footer {
   background-color: lightgrey;
-  margin: 2em 0em 1em 0em;
+  margin: 2em 0em 0em 0em;
 }
-
 
 footer > div {
   text-align: center;
@@ -97,9 +56,6 @@ footer > div {
 .fa {
   padding: 10px;
   font-size: 40px;
-  //margin-left: auto;
-  //margin-right: auto;
-  //text-align: center;
 }
 
 .fa-facebook, .fa-twitter {
@@ -110,59 +66,64 @@ footer > div {
   text-align: center;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 919px) {
   body {
     grid-template-columns: 0px 1fr 0px;
   }
 
-  .divpicture img {
+  .divpicture div {
     display: inline-block;
+  }
+
+  .divpicture div img {
     height: 42vw;
     width: 87vw;
     margin-bottom: 0em;
   }
 
-  .divpicture:first-child>img {
+  .divpicture:first-child > div > img {
     height: 42vw;
     width: 43vw;
   }
   footer {
     display: grid;
-    grid-template-columns: 1fr 0fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  footer div {
-    width: 50vw;
+  footer > div {
+    width: 33vw;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 920px) {
   body {
     grid-template-columns: 0px 1fr 0px;
   }
 
-  .divpicture img {
+  .divpicture div {
     display: inline-block;
-    height: 25vw;
-    width: 54vw;
-    margin-bottom: 0em;
   }
 
-  .divpicture:first-child>img {
+  .divpicture div:first-child img {
+    height: 25vw;
+    width: 54vw;
+  }
+
+  .divpicture > div:nth-child(2) > img {
+    height: 25vw;
+    width: 33vw;
+  }
+
+  .divpicture div img {
     height: 25vw;
     width: 29vw;
   }
 
-  .divpicture>img:nth-child(2) {
-    display: inline-block;
-    height: 25vw;
-    width: 33vw;
-  }
 
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   footer div {
-    width: 50vw;
+    width: 33vw;
   }
 }
