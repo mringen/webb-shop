@@ -1,60 +1,168 @@
 body {
   display: grid;
-  grid-template-columns: 150px 1fr 150px;
-  grid-template-rows: 100px 1fr 200px;
+  grid-template-columns: 30px 1fr 30px;
+  grid-template-rows: auto 1fr auto;
   margin: 0em;
   padding: 0em;
   background-color: #F9F9EAEA;
 }
-body > * {
-border: solid black 1px;
-padding: 2em;
+
+body>nav {
+  grid-row: 2;
 }
+
+/*start css header*/
+
+/*header {
+  -webkit-mask: url("http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png");
+-webkit-mask-size: 100% 100%;
+-webkit-mask-position: center;
+}*/
+
+hr{
+   background: #d8d015;
+   border: #d8d015;
+
+}
+
+.socialMedia
+{
+   background-color: #d8d015;
+   padding: 1em;
+   position: relative;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.TEXT{
+  text-align: center
+}
+
+.TEXT > div{
+   border: 1px dashed red;
+   display: inline-block;
+   margin: 0px 0.5em;
+}
+/*stop css header*/
+
+/*
 header {
   background-color: #1D1010;
   color: #F9EAEA;
   text-align: center;
+  padding: 2em;
 }
-header > div {
+
+header>div {
   text-align: left;
   font-size: 1.5em;
   font-style: italic;
 }
-header > ul > li {
+
+header>ul>li {
   display: inline-block;
   font-size: 1.2em;
   margin-right: 2em;
 }
-main {
-//padding: 0em;
-}
+*/
+
 body > header, body > footer {
   grid-column: 1 / span 3;
 }
-body > nav {
-grid-row: 2;
+
+main {
+  padding: 0em 0em 1em 0em;
+  text-align: center;
 }
+
+picture img {
+  width: 390px;
+}
+
+main div {
+  display: block;
+  margin: 1em auto 2em auto;
+}
+
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  background-color: lightgrey;
+  margin: 2em 0em 1em 0em;
 }
+
+
 footer > div {
-  grid-column-gap: 30px;
-  //border: solid black;
   text-align: center;
-  width: 20em;
+  width: 100vw;
 }
+
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 40px;
-  width: 20px;
-  text-align: center;
-  margin: 5px 2px;
+  //margin-left: auto;
+  //margin-right: auto;
+  //text-align: center;
 }
-.fa-facebook, .fa-twitter, .fa-instagram {
+
+.fa-facebook, .fa-twitter {
   display: block;
   background-color: #3B5998;
   color: white;
   border-radius: 10%;
   text-align: center;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    grid-template-columns: 0px 1fr 0px;
+  }
+
+  .divpicture img {
+    display: inline-block;
+    height: 42vw;
+    width: 87vw;
+    margin-bottom: 0em;
+  }
+
+  .divpicture:first-child>img {
+    height: 42vw;
+    width: 43vw;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+  }
+  footer div {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    grid-template-columns: 0px 1fr 0px;
+  }
+
+  .divpicture img {
+    display: inline-block;
+    height: 25vw;
+    width: 54vw;
+    margin-bottom: 0em;
+  }
+
+  .divpicture:first-child>img {
+    height: 25vw;
+    width: 29vw;
+  }
+
+  .divpicture>img:nth-child(2) {
+    display: inline-block;
+    height: 25vw;
+    width: 33vw;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer div {
+    width: 50vw;
+  }
 }
