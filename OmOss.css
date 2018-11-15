@@ -171,7 +171,11 @@ i{
 .twitter{
     color: white;
 }
-/*on hover increase size of font and div*/
+/*Gäller för ikonerna i presentations div EJ i bottom nav bar*/
+.alignRight > img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
 .alignRight{
     grid-auto-rows:minmax(350px, auto);
     position: relative;
@@ -233,11 +237,16 @@ input[type=submit]:hover {
     text-align: center;
     text-decoration: none;
 }
+/* navbarens ikoner och text "scalas" till en större storlek on hover  */
+
 .pagelink:hover{
     font-size: 40px;
     transition: 1s;
     transform: scale(1.1);
 }
+
 .skickabutton:hover{
+    transition: 1s;
+    transform: scale(1.1);
 
 }
