@@ -1,4 +1,3 @@
-
 .padding{
     padding: 0.3em;
 }
@@ -16,7 +15,7 @@ p{ text-align: center;}
     font-size: 30px;
     font-weight: bold;
     display: inline-block;
-    margin: 0px 2em;
+    margin: 0px 1em;
 }
 .flip-card {
     background-color: transparent;
@@ -83,20 +82,18 @@ body > div{
 .wrapper > div:nth-child(odd){
     background: #C0B3A0;
 }
-.socialMedia
-{
+.socialMedia {
+    margin-top: 5em;
     opacity: 0.88;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 75px;
+    height: 95px;
     background-color: #C0B3A0;
-    padding: 1em;
+    padding: 0.1em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-
 }
 .bikelogo{
     padding: 0.2em;
@@ -128,11 +125,6 @@ body > div{
 }
 
 /* Add a hover effect if you want */
-img:hover{
-    opacity: 0.7;
-    transform: scale(1.2);
-    transition: 1s;
-}
 
 
 .fa:hover {
@@ -168,7 +160,6 @@ img:hover{
     background: #C0B3A0;
     padding: 1em;
     display: inline;
-
 }
 
 i{
@@ -178,6 +169,11 @@ i{
 .twitter{
     color: white;
 }
+/*Gäller för ikonerna i presentations div EJ i bottom nav bar*/
+.alignRight > img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
 .alignRight{
     grid-auto-rows:minmax(350px, auto);
     position: relative;
@@ -186,7 +182,6 @@ i{
     width: 700px;
     height: 280px;
     box-shadow: 0 8px 13px 0 rgba(0,0,0,0.6);
-
 }
 
 
@@ -230,3 +225,28 @@ input[type=submit]:hover {
     padding: 1em;
     margin-bottom: 3em;
 }
+.pagelink > a{
+    position: relative;
+    left: 10px;
+    color: white;
+    padding: .5em;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+/* navbarens ikoner och text "scalas" till en större storlek on hover  */
+
+.pagelink:hover{
+    font-size: 40px;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.skickabutton:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.logo{
+
+}
+
