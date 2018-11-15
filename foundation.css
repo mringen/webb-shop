@@ -2,7 +2,7 @@
 body {
     background-color: #22252C;
     display: grid;
-    grid-template-rows: 14vw 35vw 1fr auto;
+    grid-template-rows: 10vw 36vw 1fr auto;
 }
 header {
     grid-row: 1;
@@ -14,14 +14,14 @@ header {
     z-index: 5;
     width: 100%;
     height: 12vw;
-    background-color: #3F3250;
+    overflow: hidden;
 }
 .logo {
     margin-left: 30%;
     top: 0px;
     position: fixed;
 }
-h1 {
+.logo h1 {
     font-family: 'Bangers', cursive;
     font-size: 12vw;
     color: #E14658;
@@ -35,8 +35,8 @@ nav {
 nav li a {
     text-decoration: none;
     color: #C0B3A0;
-    font-size: 8vw;
-    font-family: 'Bangers', cursive;
+    font-size: 6vw;
+    font-family: 'Oswald', sans-serif;
     padding-right: 20vw;
 }
 nav ul {
@@ -46,6 +46,7 @@ nav ul {
     position: fixed;
     top: 8vw;
     left: 0px;
+    opacity: 0.8;
 }
  nav li {
     display: block;
@@ -71,22 +72,12 @@ footer {
 }
 .footer {
     background-color: #3F3250;
-    height: 23vw;
+    height: 16vw;
     width: 100%;
     position: relative;
     left: 0px;
     bottom: 0px;
     opacity: 0.7;
-}
-footer h5 {
-    color: #E14658;
-    font-size: 6vw;
-    font-family: 'Bangers', cursive;
-    padding-left: 30%;
-    margin: 0px;
-}
-.adress {
-    display: none;
 }
 .slogan {
     display: none;
@@ -101,122 +92,193 @@ footer h5 {
     color: #C0B3A0;
     border-radius: 10%;
   }
+  .map {
+    display: none;
+}
   /*Tablet CSS*/
-  @media (min-width: 600px) and (max-width: 992px) {
+  @media (min-width: 600px) and (max-width: 799px) {
       body {
         display: grid;
-        grid-template-rows: 15vw 10vw 1fr auto;
+        grid-template-rows: 6.8vw 9vw 1fr auto;
+      }
+      .logo h1 {
+          font-size: 8vw;
+          margin-left: 5vw;
+      }
+      .header {
+          height: 8vw;
       }
       nav ul {
-          top: 9.3vw;
+          top: 5.7vw;
       }
       nav li {
           display: inline;
-          float: left;
       }
       nav li a {
-          font-size: 6vw;
+          font-size: 4vw;
           display: block;
           padding: 5px 20px;  
+          float: left;
       }
       .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
           float: right;
-          padding-top: 0px;
+          padding-top: 3px;
           padding-right: 45px;
           padding-left: 0px;
       }
-      .adress {
-          display: block;
-          font-family: 'Bitter', serif;
-          color: #C0B3A0;
-          font-size: 3vw;
-          position: relative;
-          float: left;
-          padding-left: 5px;
-          height:8vw;
-      }
-      .adress p {
-          padding-top: 0px;
-          margin-top: 0px;
-      }
       .footer {
-          height: 15vw;
+          height: 8vw;
+      }
+      .slogan {
+          display: inline-block;
+          float: left;
+          height: 7vw;
+      }
+      .slogan h6 {
+          margin: 0px;
+          font-family: 'Oswald', sans-serif;
+          color: #E14658;
+          font-size: 4vw;
+          margin-left: 10px;
+      }
+      .map {
+          display: none;
       }
   }
   /*Laptop CSS*/
-  @media (min-width: 993px) {
+  @media (min-width: 800px) {
     body {
         display: grid;
-        grid-template-rows: 5vw 5vw 1fr 9vw;
+        grid-template-rows: 5.5vw 5vw 1fr 9vw;
       }
-    h1 {
-        font-size: 5vw;
+    .header h1 {
+        font-size: 6vw;
         margin-left: 35%;
     }
     .header {
-        height: 5vw;
+        height: 6vw;
     }  
     nav ul {
         top: 3.5vw;
     }
     nav li {
-        display: inline;
         float: left;
+        display: inline-block;
         padding: 5px;
     }
     nav li a {
+        
         font-size: 3vw;
         display: block;
         padding: 5px 7vw;
     }
     nav li:hover {
-        background-color: #22252C;
-        color: black;
+        background-color: #C0B3A0;
+    }
+    nav li a:hover {
+        color: #22252C;
     }
     .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
         float: right;
-        padding-top: 0px;
-        padding-right: 45px;
+        padding-top: 2vw;
+        padding-right: 1vw;
         padding-left: 0px;
-    }
-    .adress {
-        display: block;
-        font-family: 'Bitter', serif;
-        color: #C0B3A0;
-        font-size: 2vw;
-        position: relative;
-        float: left;
-        padding-left: 5px;
-        height:5vw;
-    }
-    .adress p {
-        padding-top: 0px;
-        margin-bottom: 20px;
     }
     .footer {
         height: 9vw;
     }
-    footer h5 {
-        font-size: 3vw;
-        margin-left: 8%;
-        margin-bottom: 0px;
+    .slogan {
+        display: inline-block;
+        float: right;
+        height: 4vw;
+        padding-top: 20px;
     }
-    footer p {
+    .slogan h6 {
+        margin: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #E14658;
+        font-size: 3vw;
+    }
+    .map {
+        display: block;
+        float: left;
+        margin-bottom: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #C0B3A0;
         font-size: 1.5vw;
+    }
+    p.map {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+  }
+  /*Wider laptop*/
+  @media (min-width: 1300px) {
+    body {
+        display: grid;
+        grid-template-rows: 5.5vw 5vw 1fr 9vw;
+      }
+    .header h1 {
+        font-size: 5vw;
+        margin-left: 35%;
+    }
+    .header {
+        height: 4.5vw;
+    }  
+    /*img.header {
+        margin-right: auto;
+    }*/
+    nav ul {
+        top: 3.5vw;
+    }
+    nav li {
+        float: left;
+        display: inline-block;
+        padding: 5px;
+    }
+    nav li a {
+        
+        font-size: 1.8vw;
+        display: block;
+        padding: 5px 7vw;
+    }
+    nav li:hover {
+        background-color: #C0B3A0;
+    }
+    nav li a:hover {
+        color: #22252C;
+    }
+    .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+        float: right;
+        padding-top: 2vw;
+        padding-right: 1vw;
+        padding-left: 0px;
+    }
+    .footer {
+        height: 7vw;
     }
     .slogan {
-        float: center;
-        margin-left: 18%;
-        margin-top: 0px;
         display: inline-block;
-        width: 20vw;
+        float: right;
         height: 4vw;
-        text-align: center;
+        padding-top: 20px;
     }
-    h6 {
-        font-family: 'Bitter', serif;
-        font-size: 1.5vw;
+    .slogan h6 {
+        margin: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #E14658;
+        font-size: 3vw;
+    }
+    .map {
+        display: block;
+        float: left;
+        margin-bottom: 0px;
+        font-family: 'Oswald', sans-serif;
         color: #C0B3A0;
-        margin: 2px;
+        font-size: 1.5vw;
+    }
+    p.map {
+        margin-top: 0px;
+        margin-left: 10px;
     }
   }
