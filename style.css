@@ -1,9 +1,10 @@
-body {
+/*body {
   display: grid;
   grid-template-columns: 30px 1fr 30px;
   grid-template-rows: auto 1fr auto;
   margin: 0em;
   padding: 0em;
+<<<<<<< HEAD
   background-color: lightblue;
 }
 
@@ -12,6 +13,16 @@ body > nav {
 }
 
 header {
+=======
+  //background-color: lightblue;
+}*/
+
+/*body > nav {
+  grid-row: 2;
+}*/
+
+/*header {
+>>>>>>> niclas-branch
   background-color: brown;
   width: auto;
   height: 150px;
@@ -20,12 +31,16 @@ header {
 
 body > header, body > footer {
   grid-column: 1 / span 3;
-}
+}*/
 
 main {
   padding: 0em 0em 1em 0em;
   text-align: center;
   border: solid black 1px;
+<<<<<<< HEAD
+=======
+  height: auto;
+>>>>>>> niclas-branch
 }
 .absolute {
   position: absolute;
@@ -42,7 +57,7 @@ main {
   display: block;
 }
 
-footer {
+/*footer {
   background-color: lightgrey;
   margin: 2em 0em 0em 0em;
 }
@@ -50,9 +65,9 @@ footer {
 footer > div {
   text-align: center;
   width: 100vw;
-}
+}*/
 
-.fa {
+/*.fa {
   padding: 10px;
   font-size: 40px;
 }
@@ -63,11 +78,11 @@ footer > div {
   color: white;
   border-radius: 10%;
   text-align: center;
-}
+}*/
 
 @media (min-width: 480px) and (max-width: 919px) {
   body {
-    grid-template-columns: 0px 1fr 0px;
+    grid-template-columns: 1fr;
   }
 
   .divpicture div {
@@ -84,18 +99,24 @@ footer > div {
     height: 42vw;
     width: 43vw;
   }
-  footer {
+  /*footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+<<<<<<< HEAD
   }
   footer > div {
     width: 33vw;
+=======
+>>>>>>> niclas-branch
   }
+  footer > div {
+    width: 33vw;
+  }*/
 }
 
 @media (min-width: 920px) {
   body {
-    grid-template-columns: 0px 1fr 0px;
+    grid-template-columns: 1fr;
   }
 
   .divpicture div {
@@ -118,11 +139,19 @@ footer > div {
   }
 
 
+<<<<<<< HEAD
   footer {
+=======
+  /*footer {
+>>>>>>> niclas-branch
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   footer div {
     width: 33vw;
+<<<<<<< HEAD
   }
+=======
+  }*/
+>>>>>>> niclas-branch
 }
