@@ -1,0 +1,284 @@
+/*Mobilversionens CSS*/
+body {
+    background-color: #22252C;
+    display: grid;
+    grid-template-rows: 10vw 36vw 1fr auto;
+}
+header {
+    grid-row: 1;
+}
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 12vw;
+    overflow: hidden;
+}
+.logo {
+    margin-left: 30%;
+    top: 0px;
+    position: fixed;
+}
+.logo h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 12vw;
+    color: #E14658;
+    opacity: 0.9;
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    grid-row: 2;
+}
+nav li a {
+    text-decoration: none;
+    color: #C0B3A0;
+    font-size: 6vw;
+    font-family: 'Oswald', sans-serif;
+    padding-right: 20vw;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #3F3250;
+    width: 100%;
+    position: fixed;
+    top: 8vw;
+    left: 0px;
+    opacity: 0.8;
+}
+ nav li {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+main {
+    grid-row: 3;
+}
+main div {
+    background-color: #E14658;
+    height: 200px;
+    width: 200px;
+}
+.yellow {
+    background-color: #C0B3A0;
+    height: 200px;
+    width: 200px;
+}
+footer {
+    grid-row: 4;
+}
+.footer {
+    background-color: #3F3250;
+    height: 16vw;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+}
+.slogan {
+    display: none;
+}
+.fa {
+    padding-top: 3vw;
+    padding-left: 10vw;
+  }
+  
+  .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+    display: inline-block;
+    color: #C0B3A0;
+    border-radius: 10%;
+  }
+  .map {
+    display: none;
+}
+  /*Tablet CSS*/
+  @media (min-width: 600px) and (max-width: 799px) {
+      body {
+        display: grid;
+        grid-template-rows: 6.8vw 9vw 1fr auto;
+      }
+      .logo h1 {
+          font-size: 8vw;
+          margin-left: 5vw;
+      }
+      .header {
+          height: 8vw;
+      }
+      nav ul {
+          top: 5.7vw;
+      }
+      nav li {
+          display: inline;
+      }
+      nav li a {
+          font-size: 4vw;
+          display: block;
+          padding: 5px 20px;  
+          float: left;
+      }
+      .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+          float: right;
+          padding-top: 3px;
+          padding-right: 45px;
+          padding-left: 0px;
+      }
+      .footer {
+          height: 8vw;
+      }
+      .slogan {
+          display: inline-block;
+          float: left;
+          height: 7vw;
+      }
+      .slogan h6 {
+          margin: 0px;
+          font-family: 'Oswald', sans-serif;
+          color: #E14658;
+          font-size: 4vw;
+          margin-left: 10px;
+      }
+      .map {
+          display: none;
+      }
+  }
+  /*Laptop CSS*/
+  @media (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-rows: 5.5vw 5vw 1fr 9vw;
+      }
+    .header h1 {
+        font-size: 6vw;
+        margin-left: 35%;
+    }
+    .header {
+        height: 6vw;
+    }  
+    nav ul {
+        top: 3.5vw;
+    }
+    nav li {
+        float: left;
+        display: inline-block;
+        padding: 5px;
+    }
+    nav li a {
+        
+        font-size: 3vw;
+        display: block;
+        padding: 5px 7vw;
+    }
+    nav li:hover {
+        background-color: #C0B3A0;
+    }
+    nav li a:hover {
+        color: #22252C;
+    }
+    .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+        float: right;
+        padding-top: 2vw;
+        padding-right: 1vw;
+        padding-left: 0px;
+    }
+    .footer {
+        height: 9vw;
+    }
+    .slogan {
+        display: inline-block;
+        float: right;
+        height: 4vw;
+        padding-top: 20px;
+    }
+    .slogan h6 {
+        margin: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #E14658;
+        font-size: 3vw;
+    }
+    .map {
+        display: block;
+        float: left;
+        margin-bottom: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #C0B3A0;
+        font-size: 1.5vw;
+    }
+    p.map {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+  }
+  /*Wider laptop*/
+  @media (min-width: 1300px) {
+    body {
+        display: grid;
+        grid-template-rows: 5.5vw 5vw 1fr 9vw;
+      }
+    .header h1 {
+        font-size: 5vw;
+        margin-left: 35%;
+    }
+    .header {
+        height: 4.5vw;
+    }  
+    /*img.header {
+        margin-right: auto;
+    }*/
+    nav ul {
+        top: 3.5vw;
+    }
+    nav li {
+        float: left;
+        display: inline-block;
+        padding: 5px;
+    }
+    nav li a {
+        
+        font-size: 1.8vw;
+        display: block;
+        padding: 5px 7vw;
+    }
+    nav li:hover {
+        background-color: #C0B3A0;
+    }
+    nav li a:hover {
+        color: #22252C;
+    }
+    .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-pinterest-square {
+        float: right;
+        padding-top: 2vw;
+        padding-right: 1vw;
+        padding-left: 0px;
+    }
+    .footer {
+        height: 7vw;
+    }
+    .slogan {
+        display: inline-block;
+        float: right;
+        height: 4vw;
+        padding-top: 20px;
+    }
+    .slogan h6 {
+        margin: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #E14658;
+        font-size: 3vw;
+    }
+    .map {
+        display: block;
+        float: left;
+        margin-bottom: 0px;
+        font-family: 'Oswald', sans-serif;
+        color: #C0B3A0;
+        font-size: 1.5vw;
+    }
+    p.map {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+  }
