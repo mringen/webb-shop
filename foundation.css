@@ -2,7 +2,7 @@
 body {
     background-color: #22252C;
     display: grid;
-    grid-template-rows: 10vw 36vw 1fr auto;
+    grid-template-rows: 10vw 36vw auto 16vw;
 }
 header {
     grid-row: 1;
@@ -57,26 +57,14 @@ nav ul {
 main {
     grid-row: 3;
 }
-main div {
-    background-color: #E14658;
-    height: 200px;
-    width: 200px;
-}
-.yellow {
-    background-color: #C0B3A0;
-    height: 200px;
-    width: 200px;
-}
 footer {
     grid-row: 4;
 }
 .footer {
     background-color: #3F3250;
     height: 16vw;
-    width: 100%;
     position: relative;
-    left: 0px;
-    bottom: 0px;
+    width: 100%;
     opacity: 0.7;
 }
 .slogan {
@@ -99,7 +87,7 @@ footer {
   @media (min-width: 600px) and (max-width: 799px) {
       body {
         display: grid;
-        grid-template-rows: 6.8vw 9vw 1fr auto;
+        grid-template-rows: 6.8vw 9vw auto auto;
       }
       .logo h1 {
           font-size: 8vw;
@@ -149,7 +137,7 @@ footer {
   @media (min-width: 800px) {
     body {
         display: grid;
-        grid-template-rows: 5.5vw 5vw 1fr 9vw;
+        grid-template-rows: 5.5vw 5vw auto 9vw;
       }
     .header h1 {
         font-size: 6vw;
@@ -216,7 +204,7 @@ footer {
   @media (min-width: 1300px) {
     body {
         display: grid;
-        grid-template-rows: 5.5vw 5vw 1fr 9vw;
+        grid-template-rows: 5.5vw 5vw auto 9vw;
       }
     .header h1 {
         font-size: 5vw;
