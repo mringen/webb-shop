@@ -1,52 +1,7 @@
-<<<<<<< HEAD
-/*body {
-  display: grid;
-  grid-template-columns: 30px 1fr 30px;
-  grid-template-rows: auto 1fr auto;
-  margin: 0em;
-  padding: 0em;
-<<<<<<< HEAD
-  background-color: lightblue;
-}
-
-body > nav {
-  grid-row: 2;
-}
-
-header {
-=======
-  //background-color: lightblue;
-}*/
-
-/*body > nav {
-  grid-row: 2;
-}*/
-
-/*header {
->>>>>>> niclas-branch
-  background-color: brown;
-  width: auto;
-  height: 150px;
-  margin-bottom: 2em;
-}
-
-body > header, body > footer {
-  grid-column: 1 / span 3;
-}*/
-
-=======
->>>>>>> niclas-branch
 main {
   margin: 2em auto 2em auto;
   text-align: center;
-<<<<<<< HEAD
-  border: solid black 1px;
-<<<<<<< HEAD
-=======
   height: auto;
->>>>>>> niclas-branch
-=======
->>>>>>> niclas-branch
 }
 main a {
   text-decoration: none;
@@ -91,22 +46,6 @@ main a {
     height: 42vw;
     width: 43vw;
   }
-<<<<<<< HEAD
-  /*footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-<<<<<<< HEAD
-  }
-  footer > div {
-    width: 33vw;
-=======
->>>>>>> niclas-branch
-  }
-  footer > div {
-    width: 33vw;
-  }*/
-=======
->>>>>>> niclas-branch
 }
 
 @media (min-width: 800px) {
@@ -129,28 +68,9 @@ main a {
     height: 25vw;
     width: 29vw;
   }
-<<<<<<< HEAD
 
-
-<<<<<<< HEAD
-  footer {
-=======
-  /*footer {
->>>>>>> niclas-branch
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  footer div {
-    width: 33vw;
-<<<<<<< HEAD
-  }
-=======
-  }*/
->>>>>>> niclas-branch
-=======
   .firstPic:hover, .secondPic:hover, .thirdPic:hover, .fourthPic:hover, .fifthPic:hover {
     background-color: #C0B3A0;
     color: #22252C;
   }
->>>>>>> niclas-branch
 }
