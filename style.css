@@ -1,75 +1,35 @@
-/*body {
-  display: grid;
-  grid-template-columns: 30px 1fr 30px;
-  grid-template-rows: auto 1fr auto;
-  margin: 0em;
-  padding: 0em;
-  //background-color: lightblue;
-}*/
-
-/*body > nav {
-  grid-row: 2;
-}*/
-
-/*header {
-  background-color: brown;
-  width: auto;
-  height: 150px;
-  margin-bottom: 2em;
-}
-
-body > header, body > footer {
-  grid-column: 1 / span 3;
-}*/
-
 main {
-  padding: 0em 0em 1em 0em;
+  margin: 2em auto 2em auto;
   text-align: center;
-  border: solid black 1px;
-  height: auto;
 }
+main a {
+  text-decoration: none;
+  color: #C0B3A0;
+}
+
 .absolute {
   position: absolute;
 }
+
  .firstPic, .secondPic, .thirdPic, .fourthPic, .fifthPic {
-  background-color: brown;
+  font-family: 'Oswald', sans-serif;
+  color: #C0B3A0;
+  background-color: #3F3250;
+  opacity: 0.9;
+}
+.divpicture div img {
 }
 
 .divpicture div img {
-  width: 350px;
+  width: 90vw;
 }
 
-.divpicture div {
+.divpicture > div {
   display: block;
-}
-
-/*footer {
-  background-color: lightgrey;
-  margin: 2em 0em 0em 0em;
-}
-
-footer > div {
   text-align: center;
-  width: 100vw;
-}*/
-
-/*.fa {
-  padding: 10px;
-  font-size: 40px;
 }
 
-.fa-facebook, .fa-twitter {
-  display: block;
-  background-color: #3B5998;
-  color: white;
-  border-radius: 10%;
-  text-align: center;
-}*/
-
-@media (min-width: 480px) and (max-width: 919px) {
-  body {
-    grid-template-columns: 1fr;
-  }
+@media (min-width: 599px) and (max-width: 799px) {
 
   .divpicture div {
     display: inline-block;
@@ -85,19 +45,9 @@ footer > div {
     height: 42vw;
     width: 43vw;
   }
-  /*footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  footer > div {
-    width: 33vw;
-  }*/
 }
 
-@media (min-width: 920px) {
-  body {
-    grid-template-columns: 1fr;
-  }
+@media (min-width: 800px) {
 
   .divpicture div {
     display: inline-block;
@@ -117,13 +67,8 @@ footer > div {
     height: 25vw;
     width: 29vw;
   }
-
-
-  /*footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .firstPic:hover, .secondPic:hover, .thirdPic:hover, .fourthPic:hover, .fifthPic:hover {
+    background-color: #C0B3A0;
+    color: #22252C;
   }
-  footer div {
-    width: 33vw;
-  }*/
 }
