@@ -13,7 +13,7 @@ main p, main h2 {
 }
 .bikeBorder {
     background-color:#3F3250;
-    height: 190vw;
+    height: 210vw;
     width: 90vw;
     display: block;
     margin-left: auto;
@@ -36,7 +36,7 @@ main button {
     opacity: 0.7;
 }
 .secondRow {
-    margin-left: 10vw;
+    margin-left: 15vw;
 }
 .links img {
     border: 10px solid white;
@@ -45,6 +45,8 @@ main button {
     margin: 0px;
 }
 .links a {
+    height: 40vw;
+    width: 30vw;
     text-decoration: none;
     color: #3F3250;
     text-align: center;
@@ -96,19 +98,25 @@ font-family: 'Oswald', sans-serif;
         top: 13vw;
     }
     .links {
-        width: 90vw;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 10vw;
+        width: 100vw;
+        margin-top: 5vw;
         display: flex;
         flex-wrap: wrap;
     }
+    .links a {
+        height: 20vw;
+        width: 23vw;
+    }
     .links h3 {
-        top: -9vw;
+        top: -8vw;
     }
     .links img {
-        border: 20px solid white;
-        border-bottom: 50px solid white;
+        width: 15vw;
+        border: 10px solid white;
+        border-bottom: 30px solid white;
+    }
+    .secondRow {
+        margin-left: 0vw;
     }
 }
 @media (min-width: 800px) {
@@ -146,6 +154,9 @@ font-family: 'Oswald', sans-serif;
     p.price {
         position: relative;
         top: 4vw;
+    }
+    .links a {
+        height: 20vw;
     }
     .links h3 {
         position: relative;
@@ -216,6 +227,9 @@ font-family: 'Oswald', sans-serif;
     }
     .links {
         float: left;
+    }
+    .links a {
+        height: 15vw;
     }
     .links {
         width: 20vw;
