@@ -1,105 +1,254 @@
-body {
-    display: grid;
-    grid-template-rows: 14vw 1fr auto auto;
-    background-image: url("imgEva/pexels-photo-276517.jpeg");
-    height: 100%;
-    background-position: left bottom;
+main img {
+    width: 80vw;
+    margin: 5vw;
+    margin-top: 0px;
 }
-.header {
-    position: fixed;
-    top: 0px;
-    z-index: 5;
-    width: 100%;
-    height: 5vw;
-    background-color: white;
+main p, main h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #C0B3A0;
 }
-hr {
-    box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2);
-    background: #d8d015;
-    border:  #d8d015;
-    
+.bikeBorder p {
+    margin: 5vw;
 }
-.bikelogo{
-    padding: 0.2em;
-    position: relative;
+.bikeBorder {
+    background-color:#3F3250;
+    height: 210vw;
+    width: 90vw;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
+    opacity: 0.7;
 }
-.TEXT{
-    text-align: center
+#bikeColor {
+    margin-left: 38vw;
 }
-.TEXT > div{
-    display: inline-block;
-    margin: 0px 0.5em;
+main button {
+    margin-left: 5vw;
 }
-.socialMedia {
-    background-color: #d8d015;
-    padding: 1em;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.links {
+    width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.7;
 }
-header {
-    grid-row: 1;
+.secondRow {
+    margin-left: 15vw;
 }
-li {
-    margin: 15px;
-    width: 250px;
-    background-color: #d8d015;
-    border-radius: 20%;
-    list-style-type: none;
+.links img {
+    border: 10px solid white;
+    border-bottom: 40px solid white;
+    width: 30vw;
+    margin: 0px;
 }
-li a {
-    display: block;
-    color: rgb(27, 9, 9);
-    padding: 10px;
+.links a {
+    height: 40vw;
+    width: 30vw;
     text-decoration: none;
-}
-a {
-    font-size: 1em;
-    text-decoration: none;
-    color: rgb(27, 9, 9);
-    font-family: 'KoHo', sans-serif;
-}
-main {
-    background-color: rgb(242, 242, 242);
-    border: 4px dotted #d8d015;
-    grid-row: 2;
+    color: #3F3250;
     text-align: center;
-    margin: 20px;
+    font-family: 'Oswald', sans-serif;
 }
-main > img {
-    width: 20vw;
-    border: 2px solid black;
+.links h3 {
+    position: relative;
+    top: -15vw;
 }
-h2, p {
-    font-family: 'KoHo', sans-serif;
-}
-aside {
-    grid-row: 3;
-}
-footer {
-    grid-row: 4;
-    width: 100%;
-}
-@media screen and (min-width: 992px) {
-    body {
-        display: grid;
-        grid-template-rows: 12vw 1fr auto;
-        grid-template-columns: 300px 1fr; 
+
+/*
+#E14658
+#22252C
+font-family: 'Bangers', cursive;
+#C0B3A0
+font-family: 'Oswald', sans-serif;
+#3F3250
+*/
+@media (min-width: 600px) and (max-width: 799px) {
+    main img {
+        width: 50vw;
+        margin: 15vw;
+        margin-top: 0px;
     }
-    header, nav, footer {
-        grid-column: 1/ span 2;
+    main p h2 {
+        font-family: 'Oswald', sans-serif;
     }
-    aside {
-        grid-column: 1;
-        grid-row: 2;
+    .bikeBorder p {
+        margin: 5vw;
+        margin-top: -13vw;
     }
-    main {
-        grid-column: 2;
-        grid-row: 2;
+    .bikeBorder {
+        background-color:#3F3250;
+        height: 110vw;
+        width: 80vw;
+        display: block;
+        opacity: 0.7;
     }
-    a {
-        font-size: 2vw;
+    #bikeColor {
+        margin-left: 37vw;
+        position: relative;
+        top: -3vw;
+    }
+    main button {
+        margin-left: 5vw;
+    }
+    p.price {
+        position: relative;
+        top: 13vw;
+    }
+    .links {
+        width: 100vw;
+        margin-top: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .links a {
+        height: 20vw;
+        width: 23vw;
+    }
+    .links h3 {
+        top: -8vw;
+    }
+    .links img {
+        width: 15vw;
+        border: 10px solid white;
+        border-bottom: 30px solid white;
+    }
+    .secondRow {
+        margin-left: 0vw;
+    }
+}
+@media (min-width: 800px) {
+    main  img {
+        width: 50vw;
+        margin-left: 10%;
+    }
+    main h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+    }
+    .bikeBorder p {
+        font-family: 'Oswald', sans-serif;
+        margin: 5vw;
+        margin-top: -50px;
+        font-size: 1.5em;
+    }
+    .bikeBorder {
+        background-color:#3F3250;
+        margin-top: 1vw;
+        margin-bottom: 5vw;
+        height: 103vw;
+        width: 70vw;
+        display: block;
+        float: right;
+    }
+    #bikeColor {
+        margin-left: 28vw;
+        position: relative;
+        top: -3vw;
+    }
+    main button {
+        margin-left: 5vw;
+    }
+    p.price {
+        position: relative;
+        top: 4vw;
+    }
+    .links a {
+        height: 20vw;
+    }
+    .links h3 {
+        position: relative;
+    }
+    .links {
+        float: left;
+    }
+    .links {
+        width: 20vw;
+        margin-top: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.7;
+    }
+    .links h3 {
+        top: -6vw;
+        font-size: 1.5em;
+    }
+    .links img {
+        border: 10px solid white;
+        border-bottom: 30px solid white;
+        width: 15vw;
+        margin-left: 3vw;
+    }
+    .secondRow {
+        margin-left: 0px;
+    }
+}
+@media (min-width: 1300px) {
+    main  img {
+        width: 30vw;
+        margin-left: 28%;
+    }
+    main h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5em;
+    }
+    .bikeBorder p {
+        font-family: 'Oswald', sans-serif;
+        margin: 5vw;
+        margin-top: -50px;
+        font-size: 1.5em;
+    }
+    .bikeBorder {
+        background-color:#3F3250;
+        margin-top: 1vw;
+        margin-right: 4vw;
+        height: 66vw;
+        width: 70vw;
+        display: block;
+        float: right;
+    }
+    #bikeColor {
+        margin-left: 33vw;
+        position: relative;
+        top: -4vw;
+    }
+    main button {
+        margin-left: 3vw;
+        width: 6vw;
+    }
+    p.price {
+        position: relative;
+        top: 0vw;
+    }
+    .links h3 {
+        position: relative;
+    }
+    .links {
+        float: left;
+    }
+    .links a {
+        height: 15vw;
+    }
+    .links {
+        width: 20vw;
+        margin-top: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.7;
+    }
+    .links h3 {
+        top: -4vw;
+        font-size: 1.5em;
+    }
+    .links img {
+        border: 15px solid white;
+        border-bottom: 40px solid white;
+        width: 10vw;
+        margin-left: 5vw;
+    }
+    .secondRow {
+        margin-left: 0px;
     }
 }

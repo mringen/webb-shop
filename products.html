@@ -3,70 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BikeTriCity - Produkter - Cyklar</title>
+  <title>STRiDA - Cyklar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="foundation.css" rel="stylesheet" type="text/css"/>
   <link href="products.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <header>
-            <div class="header">
-                    <div class="socialMedia TEXT">
-                        <div>
-                            <a href>HEM</a> <br/>
-                            <img class="bikelogo" src="imgEva/bicycle.svg" width="50" height="40">
-                        </div>
-                        <div>
-                            <a href>PRODUKTER</a> <br/>
-                            <img class="bikelogo" src="imgEva/bicycle.svg" width="50" height="40">
-                        </div>
-                        <div>
-                            <a href>VISION</a> <br/>
-                            <img class="bikelogo" src="imgEva/bicycle.svg" width="50" height="40">
-                        </div>
-                        <div>
-                            <a href>OM OSS</a> <br/>
-                            <img class="bikelogo" src="imgEva/bicycle.svg" width="50" height="40">
-                        </div>    
-                    </div>
-                    <hr size="18">
-                    <hr size="9">
-                    <hr size="6">
-                    <hr size="3">
-                    <hr size="1">
-                </div>
+        <div class="header">
+            <picture>
+                <source srcset="imgEva/lights-website-header-small.jpg" media="(max-width: 600px)">
+                <source srcset="imgEva/colorful-blurred-lights-website-header.jpg" media="(max-width: 800px)">
+                <source srcset="long-head.png"> 
+                <img src="imgEva/colorful-blurred-lights-website-header.jpg" alt="">    
+            </picture>
+            <div class="logo">
+                <img src="imgEva/StridaLogoCropped.png" alt="logo">
+            </div>
+        </div>
     </header>
-    
-    <aside>
+    <nav>
         <ul>
-            <li><a href="products.html">Cyklar</a></li>
-            <li><a href="products-lamps.html">Belysning</a></li>
-            <li><a href="products-helmets.html">Hjälmar</a></li>
-
+            <li><a href="index.html">HEM</a></li>
+            <li><a href="products.html">PRODUKTER</a></li>
+            <li><a href="Vision2.0.html">VISION</a></li>
+            <li><a href="OmOss.html">KONTAKT</a></li>
         </ul>
-    </aside>
+    </nav>
     <main>
+        <div class="mainContainer">
+        <div class="bikeBorder">
         <h2>Strida</h2>
         <img src="imgEva/Strida_LT_Cream__42573.1449544187.jpg" alt="Strida Cream">
-        <p>
-            En STRiDA är inte lik någon annan cykel.
-                Dess annorlunda utseende med triangulär ram är grunden till den unika metod att vikas upp och ihop på ca 7 sekunder.
-                I hopfällt läge rullar man den framför sig på sina ordinarie hjul, alltså utan extra tillbehör, eller bär den i handtaget under sadeln vid behov.
-                Drivningen är med kamrem och en 3-växlad modell finns att välja på, växlarna ligger direkt i vevhuset och inga extra vajrar behövs till styret.
-                Bromsarna är skivbromsar på samtliga modeller.
-                Normalvikt på en STRiDA är från ca 10 kg, beroende på utrustning.</p>
-        <select id="bikeColor" placeholder="Välj färg">
+            <p>En STRiDA är inte lik någon annan cykel.
+            Dess annorlunda utseende med triangulär ram är grunden till den unika metod att vikas upp och ihop på ca 7 sekunder.
+            I hopfällt läge rullar man den framför sig på sina ordinarie hjul, alltså utan extra tillbehör, eller bär den i handtaget under sadeln vid behov.
+            Drivningen är med kamrem och en 3-växlad modell finns att välja på, växlarna ligger direkt i vevhuset och inga extra vajrar behövs till styret.
+            Bromsarna är skivbromsar på samtliga modeller.
+            Normalvikt på en STRiDA är från ca 10 kg, beroende på utrustning.</p>
+        <select id="bikeColor">
             <option value="Vit">Vit</option>
             <option value="Svart">Svart</option>
             <option value="Röd">Röd</option>
             </select>
-        <p>6.500 kr</p>
-        <button>Köp nu</button>
+        <p class="price">6.500 kr <button>Köp nu</button></p>
+    </div>
+    <div class="links">
+        <a href="products.html">
+            <img src="imgEva/stridalink.jpg" alt="Cykel">
+            <h3>Cyklar</h3>
+        </a>
+        <a href="products-lamps.html" class="secondRow">
+            <img src="imgEva/belysning.jpg" alt="Belysning">
+            <h3>Belysning</h3>
+        </a>
+        <a href="products-helmets.html">
+            <img src="imgEva/helmet.jpg" alt="Hjälmar">
+            <h3>Hjälmar</h3>
+        </a>
+        <a href="products-ovrigt.html" class="secondRow">
+            <img src="imgEva/ovrigt.jpg" alt="Övrigt">
+            <h3>Övrigt</h3>
+        </a>                    
+    </div>
+</div>
     </main>
     <footer>
-        <div class="socialMedia">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
+        <div class="footer">  
+                <div class="mediaLinks">
+            <div class="slogan">
+                <h6>vi älskar när ni hör av er!</h6>
+            </div>
+            <div>
+                <a target="_blank" href="https://www.facebook.com/strida.folding.bikes/" class="fa fa-3x fa-facebook-square"></a>
+                <a target="_blank" href="https://www.twitter.com" class="fa fa-3x fa-twitter-square"></a>
+                <a target="_blank" href="https://www.instagram.com/explore/tags/strida/" class="fa fa-3x fa-instagram"></a>
+                <a target="_blank" href="https://www.pinterest.se/mightyvelo/strida-bikes/?lp=true" class="fa fa-3x fa-pinterest-square"></a>
+            </div>
+            </div>
+            <div class="containerMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2133.6608054696685!2d11.925764816106353!3d57.671249149875784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff2d8895b36df%3A0xa6c57841dab62d9d!2sAxel+Dahlstr%C3%B6ms+torg%2C+414+80+G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1542278986032" style="border:0" class="map" allowfullscreen></iframe>
+                <p class="map">ÖPPETTIDER<br>MÅNDAG-FREDAG 10-19<br>LÖRDAG 10-15</p>
+                <div class="headFooter"><h3>Jag vill veta mer...</h3></div>
+            </div>
         </div>
     </footer>
 </body>
-</html>
+</html>   
