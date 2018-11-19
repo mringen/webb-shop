@@ -1,0 +1,118 @@
+main.AboutUs {
+  font-family: Oswald;
+  color: #C0B3A0;
+}
+
+.title {
+  font-size: 40px;
+  font: bold;
+  text-align: center;
+  color:#C0B3A0;
+  font-family: Oswald;
+}
+
+.muppet {
+  display: flex;
+  flex-direction: column;
+}
+
+.people, .form {
+  margin-left: 5em;
+  margin-right: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3em;
+  
+}
+
+.photo {
+  width: 150px;
+  height: auto;
+  margin-left: 28%;
+}
+
+.photo > .muppet {
+  align-items: center;
+}
+
+.muppet p {
+  line-height: 10px;
+  text-align: center;
+}
+
+.muppet strong {
+  color: #E14658;
+}
+
+input, textarea, button, select {
+  border-radius: 10px;
+  background-color: #C0B3A0;
+}
+
+input {
+  width: 60%;
+}
+
+button {
+  width: 60%;
+  height: 1.5em;
+  color: #E14658;
+  font-size: 20px;
+  text-align: center;
+  background-color: #3F3250;
+
+}
+
+button:hover {
+  font: bold;
+  height: 1.5em;
+  font-size: 20px;
+  cursor: pointer;
+  border: 3px solid #E14658;
+}
+
+textarea {
+  width: 60%;
+  height: 100px;
+}
+div.form {
+  margin-right: 12em;
+  margin-left: 12em;
+  display: block;
+  justify-content: center;
+}
+
+/*Wider laptop*/
+  @media (min-width: 1300px) {
+
+  }
+
+/*Tablet CSS*/
+@media (min-width: 600px) and (max-width: 799px){
+  .people, .form {
+      margin-left: 0;
+      margin-right: 0;
+      display: grid;
+      grid-template-columns: 2fr;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+    .people, .form {
+      margin-left: 0;
+      margin-right: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+    input {
+      width: 100%;
+}
+    textarea {
+      width: 100%;
+      height: 100px;
+}
+}
+
+
+

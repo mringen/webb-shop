@@ -31,7 +31,7 @@ strong {
 
 .site-header {
 	font-size: 40px;
-	font-style: bold;
+	font: bold;
 	text-align: center;
   color:#C0B3A0;
   font-family: Oswald;
@@ -56,10 +56,10 @@ main.Vision2 {
   background-color: #22252C;
 }
 
-img {
+.pic {
   width: 100%;
-  height: 100%
-  position: center;
+  height: 100%;
+  justify-content: center;
   margin-top: 5em;
   margin-bottom: 5em;
 }
