@@ -3,10 +3,6 @@ main {
   display: inline-block;
   /* text-align: center; */
 }
- main a {
-  //text-decoration: none;
-  //color: #C0B3A0;
-}
 
 .absolute {
   position: absolute;
@@ -36,7 +32,6 @@ main {
   font-size: 1.5em;
   left: 20px;
   top: 80%;
-  z-index: 2;
   transform: translateY(-50%);
 }
 
