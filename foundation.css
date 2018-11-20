@@ -44,9 +44,9 @@ nav ul {
     background-color: #3F3250;
     width: 100%;
     position: fixed;
+    z-index: 6;
     top: 16vw;
     left: 0px;
-    opacity: 0.9;
 }
  nav li {
     display: block;
@@ -267,7 +267,7 @@ footer {
         margin-left: 32%;
     }  
     nav ul {
-        top: 8vw;
+        top: 7.8vw;
         z-index: 6;
     }
     nav li {
